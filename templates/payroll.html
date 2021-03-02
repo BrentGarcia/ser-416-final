@@ -1,4 +1,17 @@
 {% extends "base.html" %}
+{% block backoffice %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="adminNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin Backoffice
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="payroll">Payroll Service</a>
+          <a class="dropdown-item" href="toggle-services">Enable/Disable Services</a>
+          <a class="dropdown-item" href="create-new-user">Create New Users</a>
+        </div>
+    </li>
+{% endblock %}
+
 {% block content %}
-<h1> Payroll! </h1>
+<h1 align="center"> Payroll Page! </h1>
 {% endblock %}
